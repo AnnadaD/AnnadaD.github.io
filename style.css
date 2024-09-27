@@ -21,22 +21,32 @@ body {
   min-height: 100vh;
 }
 
+/* Profile container styles */
 .profile {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Places name above profile picture */
+  align-items: flex-start; /* Aligns items to the left */
+  text-align: left;
 }
 
+.name {
+  color: #428bca; /* Blue color similar to the image */
+  font-size: 30px; /* Font size */
+  font-weight: 500; /* Slightly bolder */
+  margin-bottom: 23px; /* Space below name */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Profile picture styles */
 .profile-pic {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  width: 235px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 0; /* Keeps it a square */
+  margin-bottom: 20px; /* Space below the image */
 }
 
-h1 {
-  font-size: 22px;
-  margin: 0;
-  color: #333;
-}
-
+/* Contact styles */
 .contact {
   margin-top: 20px;
 }
@@ -50,6 +60,7 @@ h1 {
   text-decoration: none;
 }
 
+/* News section */
 .news {
   margin-top: 30px;
 }
