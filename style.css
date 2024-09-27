@@ -30,7 +30,7 @@ body {
 }
 
 .name {
-  color: #428bca; /* Blue color similar to the image */
+  color: #428bca; /* Blue color */
   font-size: 30px; /* Font size */
   font-weight: 500; /* Slightly bolder */
   margin-bottom: 23px; /* Space below name */
@@ -58,6 +58,10 @@ body {
 .contact a {
   color: #0066cc;
   text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* News section */
