@@ -181,12 +181,12 @@ li {
 
   .content {
     width: 100%; /* Full width */
-    margin-left: 0; /* Remove left margin */
+    text-align: left;
     padding: 20px; /* Adjust padding */
   }
 
   .name {
-    font-size: 24px; /* Adjust font size */
+    font-size: 34px; /* Adjust font size */
   }
 
   .profile-pic {
@@ -209,7 +209,7 @@ li {
   }
 
   .contact p {
-    font-size: 14px; /* Adjust font size */
+    font-size: 24px; /* Adjust font size */
   }
 }
 
