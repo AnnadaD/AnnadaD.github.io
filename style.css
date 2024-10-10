@@ -175,6 +175,11 @@ li {
     overflow: hidden; /* Prevent horizontal scroll */
     padding-bottom: 0;
   }
+  .profile-pic {
+    width: 100%; /* Make profile picture responsive */
+    max-width: 150px; /* Maintain reasonable size */
+    height: fit-content;
+  }
 
   .profile {
     align-items: left; /* Center profile elements */
