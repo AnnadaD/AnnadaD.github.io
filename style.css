@@ -176,8 +176,8 @@ li {
   }
 
   .profile {
-    align-items: center; /* Center profile elements */
-    text-align: center; /* Center profile text */
+    align-items: left; /* Center profile elements */
+    text-align: left; /* Center profile text */
   }
 
   .content {
