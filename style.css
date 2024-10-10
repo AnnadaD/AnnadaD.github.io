@@ -184,7 +184,7 @@ li {
   }
 
   .profile-pic {
-    max-width: 150px; /* Reduce max width for mobile */
+    max-width: 350px; /* Reduce max width for mobile */
   }
 
   h2 {
