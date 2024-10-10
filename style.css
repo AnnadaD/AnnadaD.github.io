@@ -192,9 +192,9 @@ li {
   }
 
   .profile-pic {
-    width: 80%; /* Make profile picture responsive */
+    width: 100%; /* Make profile picture responsive */
     max-width: 150px; /* Maintain reasonable size */
-    height: auto;
+    height: fit-content;
   }
 
   h2 {
