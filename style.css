@@ -162,87 +162,124 @@ li {
 /* Responsive styles */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack items vertically */
-    text-align: left; /* Center text for better mobile UX */
+    display: flex;
+    flex-direction: column; /* Stack items vertically for mobile */
+    justify-content: flex-start; /* Ensure content starts from the top */
+    min-height: 100vh; /* Ensure it takes up full height */
+    width: 100%; /* Make sure it takes full width */
+    margin: 0;
+    padding: 0;
   }
 
+  /* Sidebar adjustments */
   .sidebar {
-    position: static; /* Remove fixed positioning for mobile */
-    width: 100%; /* Full width for sidebar */
-    padding: 15px; /* Slightly reduce padding for mobile */
+    width: 50%; /* Full width for sidebar on mobile */
+    max-width: 100%; /* Prevent overflow */
+    /* Minimized padding */
     margin: 0 auto; /* Center sidebar */
-    box-shadow: none; /* Remove shadow */
-    overflow: hidden; /* Prevent horizontal scroll */
-    padding-bottom: 0;
-  }
-  .profile-pic {
-    width: 100%; /* Make profile picture responsive */
-    max-width: 150px; /* Maintain reasonable size */
-    height: fit-content;
+    box-shadow: none; /* Remove any shadow */
+    position: relative; /* Remove fixed position to avoid layout issues */
+    top: 0; /* Aligns it to the top */
+    left: 0px; /* Aligns it to the left (or wherever your profile is) */
+    width: 350px; /* Set a fixed width for the profile section */
+    height: 70vh; /* Make it take the full height of the viewport */
+    padding: 0px;
+    bottom: 0;
   }
 
+  /* Profile adjustments */
   .profile {
-    align-items: left; /* Center profile elements */
-    text-align: left; /* Center profile text */
-    padding-bottom: 0;
+    align-items: flex-start;
+    text-align: left;
   }
 
-  .content {
-    width: 100%; /* Full width for content */
-    text-align: left; /* Align text to the left */
-    padding-right: 15px; /* Adjust padding */
-    margin-left: 0; /* Reset left margin for full width */
-  }
-
-  .name {
-    font-size: 28px; /* Adjust font size */
-  }
-
+  /* Profile pic adjustments */
   .profile-pic {
-    width: 100%; /* Make profile picture responsive */
-    max-width: 150px; /* Maintain reasonable size */
-    height: fit-content;
+    width: 100%;
+    max-width: 250px; /* Limit size of profile pic */
+    height: auto;
+    margin-bottom: 0px;
   }
 
-  h1 {
-    font-size: large;
+  /* Content adjustments */
+  .content {
+    width: 100%; /* Full width for content on mobile */
+    padding: 0px; /* Minimize padding */
+    margin: 0; /* Remove any margin */
+    text-align: left; /* Keep text aligned to the left */
+    margin-top: 0;
   }
 
+  /* Responsive typography */
   h2 {
-    font-size: 22px; /* Adjust font size */
+    font-size: 22px;
   }
 
   h3 {
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
   }
 
   p,
   li {
-    font-size: 16px; /* Make paragraph and list items slightly larger */
-    line-height: 1.5; /* Ensure good readability */
+    font-size: 16px;
+    line-height: 1.5;
   }
 
-  .contact p {
-    font-size: 16px; /* Adjust contact section font size */
+  /* Media query for smaller screens */
+  @media (max-width: 480px) {
+    .sidebar {
+      padding: 5px; /* Further reduce padding */
+      margin: 0;
+    }
+
+    .content {
+      padding: 5px 5px; /* Minimized padding to reduce space */
+      margin: 0; /* Remove all margin */
+    }
+
+    .profile-pic {
+      max-width: 120px;
+    }
+
+    h2 {
+      font-size: 20px; /* Slightly smaller font for smaller screens */
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }
-
 @media (max-width: 480px) {
-  .name {
-    font-size: 24px; /* Further adjust font size for small screens */
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px; /* Reduced padding */
+    margin-bottom: 10px; /* Add small margin to the bottom to separate from content */
   }
 
   .profile-pic {
-    max-width: 120px; /* Limit profile picture size */
-    width: 100%; /* Fit picture to screen */
+    max-width: max-content;
+    width: 100%;
+    height: auto;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .content {
+    padding: 5px 10px; /* Further reduced padding */
+    margin-left: 0;
+    margin-top: 0; /* Ensure no extra space */
   }
 
   p,
   li {
-    font-size: 14px; /* Further reduce font size */
+    font-size: 14px;
   }
 
   .contact p {
-    font-size: 14px; /* Match contact text size to other elements */
+    font-size: 14px;
   }
 }
