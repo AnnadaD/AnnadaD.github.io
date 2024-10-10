@@ -163,11 +163,11 @@ li {
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center text for better mobile UX */
+    text-align: left; /* Center text for better mobile UX */
   }
 
   .sidebar {
-    position: relative; /* Remove fixed positioning for mobile */
+    position: static; /* Remove fixed positioning for mobile */
     width: 100%; /* Full width for sidebar */
     padding: 15px; /* Slightly reduce padding for mobile */
     margin: 0 auto; /* Center sidebar */
