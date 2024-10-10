@@ -168,9 +168,16 @@ li {
 
   .sidebar {
     position: relative; /* Remove fixed positioning for mobile */
-    width: 100%; /* Full width */
+    width: 90%; /* Use a percentage width to allow centering */
     height: auto; /* Adjust height */
     padding: 10px; /* Reduce padding */
+    margin: 0 auto; /* Center the sidebar */
+    box-shadow: none; /* Optional: Remove shadow for mobile */
+  }
+
+  .profile {
+    align-items: center; /* Center align profile elements */
+    text-align: center; /* Center text */
   }
 
   .content {
@@ -184,7 +191,7 @@ li {
   }
 
   .profile-pic {
-    max-width: 350px; /* Reduce max width for mobile */
+    max-width: 50px; /* Reduce max width for mobile */
   }
 
   h2 {
@@ -204,7 +211,6 @@ li {
     font-size: 14px; /* Adjust font size */
   }
 }
-
 @media (max-width: 480px) {
   .name {
     font-size: 20px; /* Further adjust font size */
