@@ -204,6 +204,10 @@ li {
     height: fit-content;
   }
 
+  h1 {
+    font-size: large;
+  }
+
   h2 {
     font-size: 22px; /* Adjust font size */
   }
