@@ -163,17 +163,16 @@ li {
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack items vertically */
-
     text-align: left;
   }
 
   .sidebar {
     position: relative; /* Remove fixed positioning for mobile */
     width: 90%; /* Use a percentage width to allow centering */
-    height: auto; /* Adjust height */
     padding: 10px; /* Reduce padding */
     margin: 0 auto; /* Center the sidebar */
     box-shadow: none; /* Optional: Remove shadow for mobile */
+    overflow: auto; /* Enable scrolling if necessary */
   }
 
   .profile {
@@ -191,7 +190,9 @@ li {
   }
 
   .profile-pic {
-    max-width: 50px; /* Reduce max width for mobile */
+    width: 100%; /* Fit profile picture to mobile width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: none; /* Remove max-width restriction */
   }
 
   h2 {
@@ -211,13 +212,15 @@ li {
     font-size: 14px; /* Adjust font size */
   }
 }
+
 @media (max-width: 480px) {
   .name {
     font-size: 20px; /* Further adjust font size */
   }
 
   .profile-pic {
-    max-width: 120px; /* Further reduce max width for very small screens */
+    max-width: none; /* Remove restriction for very small screens */
+    width: 100%; /* Fit profile picture to mobile width */
   }
 
   p,
