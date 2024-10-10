@@ -122,31 +122,34 @@ a {
   color: #007acc;
   text-decoration: none;
 }
+
 b {
   font-weight: 505;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 .contact a[href*="github.com/AnnadaD"] {
   color: #3599cc;
 }
+
 .contact a[href*="annada.dash@cumminscollege.in"] {
   color: #3599cc;
 }
+
 .contact a[href*="https://www.linkedin.com/in/annada-d/"]
 {
   color: #3599cc;
 }
+
 .contact a[href*="https://www.cmaterju.in/"]
 {
   color: #3599cc;
 }
+
 .contact a[href*="https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en"]
 {
   color: #3599cc;
 }
+
 .contact a[href*="cv/Resume_r.pdf"] {
   color: #3599cc;
 }
@@ -154,46 +157,6 @@ a:hover {
 li {
   line-height: 1.6;
   color: #555;
-}
-/* Responsive styles */
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative; /* Remove fixed positioning for mobile */
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height */
-    padding: 10px; /* Reduce padding */
-  }
-
-  .content {
-    width: 100%; /* Full width */
-    margin-left: 0; /* Remove left margin */
-    padding: 20px; /* Adjust padding */
-  }
-
-  .name {
-    font-size: 24px; /* Adjust font size */
-  }
-
-  .profile-pic {
-    max-width: 150px; /* Reduce max width for mobile */
-  }
-
-  h2 {
-    font-size: 20px; /* Adjust font size */
-  }
-
-  h3 {
-    font-size: 18px; /* Adjust font size */
-  }
-
-  p,
-  li {
-    font-size: 14px; /* Adjust font size */
-  }
-
-  .contact p {
-    font-size: 14px; /* Adjust font size */
-  }
 }
 
 /* Responsive styles */
@@ -204,6 +167,7 @@ li {
   }
 
   .sidebar {
+    position: relative; /* Remove fixed positioning for mobile */
     width: 100%; /* Full width */
     height: auto; /* Adjust height */
     padding: 10px; /* Reduce padding */
