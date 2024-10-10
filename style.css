@@ -182,7 +182,7 @@ li {
     top: 0; /* Aligns it to the top */
     left: 0px; /* Aligns it to the left (or wherever your profile is) */
     width: 350px; /* Set a fixed width for the profile section */
-    height: 80vh; /* Make it take the full height of the viewport */
+    height: 75vh; /* Make it take the full height of the viewport */
     padding: 0px;
     bottom: 0;
   }
@@ -208,6 +208,9 @@ li {
     margin: 0; /* Remove any margin */
     text-align: left; /* Keep text aligned to the left */
     margin-top: 0;
+  }
+  .name {
+    font-size: 27px;
   }
 
   /* Responsive typography */
