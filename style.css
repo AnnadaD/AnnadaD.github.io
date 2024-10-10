@@ -173,17 +173,19 @@ li {
     margin: 0 auto; /* Center sidebar */
     box-shadow: none; /* Remove shadow */
     overflow: hidden; /* Prevent horizontal scroll */
+    padding-bottom: 0;
   }
 
   .profile {
     align-items: left; /* Center profile elements */
     text-align: left; /* Center profile text */
+    padding-bottom: 0;
   }
 
   .content {
     width: 100%; /* Full width for content */
     text-align: left; /* Align text to the left */
-    padding: 15px; /* Adjust padding */
+    padding-right: 15px; /* Adjust padding */
     margin-left: 0; /* Reset left margin for full width */
   }
 
