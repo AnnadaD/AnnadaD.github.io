@@ -215,7 +215,7 @@ li {
 
 @media (max-width: 480px) {
   .name {
-    font-size: 20px; /* Further adjust font size */
+    font-size: 50px; /* Further adjust font size */
   }
 
   .profile-pic {
@@ -229,6 +229,6 @@ li {
   }
 
   .contact p {
-    font-size: 12px; /* Further adjust font size */
+    font-size: 30px; /* Further adjust font size */
   }
 }
