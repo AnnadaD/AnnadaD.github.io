@@ -163,7 +163,8 @@ li {
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
+
+    text-align: left;
   }
 
   .sidebar {
@@ -176,8 +177,7 @@ li {
   }
 
   .profile {
-    align-items: center; /* Center align profile elements */
-    text-align: center; /* Center text */
+    text-align: left;
   }
 
   .content {
