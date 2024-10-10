@@ -10,7 +10,7 @@ body {
 /* Centering the entire layout */
 .container {
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
+  justify-content: flex-start; /* Align items to the left */
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,10 +26,8 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0; /* Aligns it to the top */
-  left: 250px; /* Aligns it to the left (or wherever your profile is) */
-  width: 250px; /* Set a fixed width for the profile section */
+  left: 0; /* Aligns it to the left */
   height: 100vh; /* Make it take the full height of the viewport */
-  padding: 20px;
 }
 
 /* Profile container styles */
@@ -76,21 +74,6 @@ body {
   text-decoration: underline;
 }
 
-/* News section */
-.news {
-  margin-top: 30px;
-}
-
-.news h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.news p {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
 /* Main content styles */
 .content {
   width: 45%; /* Take up the remaining space */
@@ -98,7 +81,7 @@ body {
   background-color: #fff;
   text-align: left; /* Keep text aligned to the left */
   overflow-y: auto;
-  margin-left: 300px;
+  margin-left: 250px; /* Adjust margin to fit the sidebar */
 }
 
 /* Typography */
@@ -122,6 +105,7 @@ a {
   color: #007acc;
   text-decoration: none;
 }
+
 b {
   font-weight: 505;
 }
@@ -129,29 +113,22 @@ b {
 a:hover {
   text-decoration: underline;
 }
-.contact a[href*="github.com/AnnadaD"] {
-  color: #3599cc;
-}
-.contact a[href*="annada.dash@cumminscollege.in"] {
-  color: #3599cc;
-}
-.contact a[href*="https://www.linkedin.com/in/annada-d/"]
-{
-  color: #3599cc;
-}
-.contact a[href*="https://www.cmaterju.in/"]
-{
-  color: #3599cc;
-}
-.contact a[href*="https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en"]
-{
-  color: #3599cc;
-}
-.contact a[href*="cv/Resume_r.pdf"] {
-  color: #3599cc;
-}
 
-li {
-  line-height: 1.6;
-  color: #555;
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .sidebar {
+    position: relative; /* Change position for mobile */
+    height: auto; /* Adjust height */
+    width: 100%; /* Make sidebar full-width */
+  }
+
+  .content {
+    margin-left: 0; /* Remove left margin */
+    width: 100%; /* Make content full-width */
+    padding: 20px; /* Adjust padding */
+  }
 }
