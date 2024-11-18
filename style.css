@@ -44,7 +44,7 @@ body {
 .name {
   color: #3599cb;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: lighter;
   margin-bottom: 23px;
   font-family: "Roboto", sans-serif;
 }
